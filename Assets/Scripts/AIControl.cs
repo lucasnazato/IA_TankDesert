@@ -6,9 +6,10 @@ using UnityEngine.AI;
 public class AIControl : MonoBehaviour
 {
     public NavMeshAgent agent;
-    // Use this for initialization
+
     void Start()
     {
+        // Pegar o componente NavMeshAgent para passar para o Manager
         agent = this.GetComponent<NavMeshAgent>();
     }
 }
